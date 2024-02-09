@@ -34,6 +34,7 @@ public class PropertyManager {
                 if (inputStream != null)
                     inputStream.close();
             }
+            
         }
         return props;
     }
