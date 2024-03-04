@@ -1,4 +1,4 @@
-package de.frameworkexe.Pages;
+package de.frameworkexe.pages;
 import java.time.Duration;
 
 import org.junit.Assert;
@@ -31,45 +31,26 @@ public class BasePage {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
-    public void longClick(By locator) {
-        WebElement element = getElement(locator);
-        ((JavascriptExecutor) driver).executeScript("mobile: longClickGesture", ImmutableMap.of(
-                "elementId", ((RemoteWebElement) element).getId(), "duration", 1000));
-    }
+    public void dragAndDropAction(By drageableElement, int endX, int endY){
 
-    public void checkSimilarityOfText(String text1, String text2) {
-        Assert.assertEquals(text1, text2);
-    }
-
-    public void dragAndDrop(By locator, int endX, int endY) {
-        WebElement element = getElement(locator);
+        
+        WebElement element = getElement(drageableElement);
         ((JavascriptExecutor) driver).executeScript("mobile: dragGesture", ImmutableMap.of(
-                "elementId", ((RemoteWebElement) element).getId(),
-                "endX", endX,
-                "endY", endY));
-    }
+    "elementId", ((RemoteWebElement) element).getId(),
+    "endX", endX,
+    "endY", endY
+));
 
-    public void addTextToField(By locator, String text) {
-        getElement(locator).sendKeys(text);
     }
+    
 
-    public String getTextValueOfField(By locator) {
-        return getElement(locator).getAttribute("text");
-    }
+   
 
-    public void scrollUntilVisibilityOf(String elementText) {
-        driver.findElement(AppiumBy.androidUIAutomator(
-                "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(" +
-                        "new UiSelector().textContains(\"" + elementText + "\"))"));
-    }
+    
 
-    public void swipe(By locator, String direction) {
-        WebElement element = getElement(locator);
-        ((JavascriptExecutor) driver).executeScript("mobile: swipeGesture", ImmutableMap.of(
-                "elementId", ((RemoteWebElement) element).getId(),
-                "direction", direction.toLowerCase(),
-                "percent", 0.20));
-    }
+    
+
+   
 }
 
     

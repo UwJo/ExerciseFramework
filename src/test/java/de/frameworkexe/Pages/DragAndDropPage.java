@@ -1,4 +1,4 @@
-package de.frameworkexe.Pages;
+package de.frameworkexe.pages;
 
 import org.openqa.selenium.By;
 
@@ -9,13 +9,16 @@ public class DragAndDropPage extends BasePage {
 
     By dragResultContainerBy = AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.RelativeLayout/android.widget.TextView[2]");
     
-    public void longClickOnTextlessCircle() {
-        longClick(textLessCircleDragabbleBy);        
-    }
+public DragAndDropPage dragAndDropCircleWithNoText() {
+    dragAndDropAction(textLessCircleDragabbleBy,659,1080);
+    return this;
 
-    public void isElementDropped(String expectedDragResultMessage) {
-        String dragResultMessage = getElement(dragResultContainerBy).getText();
-        checkSimilarityOfText(expectedDragResultMessage, dragResultMessage);
-    }
+
+    
+
+}
+
+   
+       
     
 }

@@ -1,15 +1,15 @@
-package de.frameworkexe.Hooks;
+package de.frameworkexe.hooks;
 
 import java.io.IOException;
 
-import org.junit.After;
-import org.junit.Before;
 import org.openqa.selenium.OutputType;
 
 import de.frameworkexe.utils.DriverManager;
 import de.frameworkexe.utils.GlobalParams;
 import de.frameworkexe.utils.ServerManager;
 import de.frameworkexe.utils.VideoManager;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 
 public class hooks {
