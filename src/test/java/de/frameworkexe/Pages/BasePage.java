@@ -33,23 +33,19 @@ public class BasePage {
 
     public void dragAndDropAction(By drageableElement, int endX, int endY){
 
-        
         WebElement element = getElement(drageableElement);
         ((JavascriptExecutor) driver).executeScript("mobile: dragGesture", ImmutableMap.of(
     "elementId", ((RemoteWebElement) element).getId(),
     "endX", endX,
     "endY", endY
+        
 ));
+    }
+    public void checkingSimilarityOfText (String Text1, String Text2){
+        Assert.assertEquals(Text1, Text2);
+
 
     }
-    
-
-   
-
-    
-
-    
-
    
 }
 

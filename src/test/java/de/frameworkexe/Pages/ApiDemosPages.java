@@ -16,18 +16,9 @@ public class ApiDemosPages extends BasePage {
  
     }
 
-    
     public ApiDemosPages navigateToViews() {
         getElement(viewsLinkBy).click();
         return this;
     }
-
   
-
-    
-
-   
-
-  
-    
 }

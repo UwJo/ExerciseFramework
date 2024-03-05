@@ -27,6 +27,7 @@ public class DragAndDrop {
 
     @Then("the message {string} should be displayed")
     public void the_message_should_be_displayed(String string) {
+        dragAndDropPage.checkingSimilarityOfText(string);
     
     }
 }

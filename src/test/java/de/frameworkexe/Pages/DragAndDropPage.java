@@ -13,12 +13,11 @@ public DragAndDropPage dragAndDropCircleWithNoText() {
     dragAndDropAction(textLessCircleDragabbleBy,659,1080);
     return this;
 
-
-    
-
 }
-
-   
-       
-    
+public void checkingSimilarityOfText(String expectedMessage){
+    String dragResultMessage = getElement(dragResultContainerBy).getText();
+        checkingSimilarityOfText(expectedMessage, dragResultMessage);
+        
+}
+  
 }
