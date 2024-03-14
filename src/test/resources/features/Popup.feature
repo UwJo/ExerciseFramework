@@ -1,6 +1,6 @@
 Feature: Pop up
 
-   @popups
+
     Scenario: Pop up functionality
         When a user tap on views link
         And scroll up the page 
