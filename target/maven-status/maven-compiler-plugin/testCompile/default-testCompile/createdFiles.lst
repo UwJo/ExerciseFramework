@@ -1,12 +1,15 @@
 de\frameworkexe\pages\DragAndDropPage.class
+de\frameworkexe\stepdefinitions\Popup.class
 de\frameworkexe\hooks\hooks.class
 de\frameworkexe\stepdefinitions\DragAndDrop.class
 de\frameworkexe\utils\PropertyManager.class
 de\frameworkexe\utils\ServerManager.class
+de\frameworkexe\pages\PopUpMenuPage.class
 de\frameworkexe\runner\RunnerTest.class
 de\frameworkexe\utils\DriverManager.class
 de\frameworkexe\utils\VideoManager.class
 de\frameworkexe\utils\GlobalParams.class
 de\frameworkexe\pages\ApiDemosPages.class
 de\frameworkexe\pages\BasePage.class
+de\frameworkexe\stepdefinitions\Scroll.class
 de\frameworkexe\utils\CapabilitiesManager.class

@@ -46,8 +46,19 @@ public class BasePage {
 
 
     }
+
+
+    public void scrollUntilVisibilityOf(String elementText) {
+        driver.findElement(AppiumBy.androidUIAutomator(
+                "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(" +
+                        "new UiSelector().textContains(\"" + elementText + "\"))"));
+    }
+
+
+
+    }
    
-}
+
 
     
 
