@@ -7,14 +7,15 @@ import io.cucumber.java.en.When;
 
 public class Popup {
   ApiDemosPages apiDemosPage = new ApiDemosPages();
-  PopUpMenuPage popUpMenuPage = new PopUpMenuPage();
+  PopUpMenuPage popUpMenuPage;
   @When("scroll up the page")
   public void scroll_up_the_page() throws InterruptedException {
     apiDemosPage.scrollToPopupMenu();
   }
   @When ("click on Pop up menu link")
   public void popUpMenuPage(){
-    apiDemosPage.navigateToPopupMenu();
+
+    popUpMenuPage=apiDemosPage.navigateToPopupMenu();
 
   }
   @When("click on Make a Popup button")

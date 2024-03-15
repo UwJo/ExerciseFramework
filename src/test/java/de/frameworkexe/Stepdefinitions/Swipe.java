@@ -5,28 +5,28 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class Swipe {
-    SwipePage swipepage = new SwipePage();
+    SwipePage swipePage = new SwipePage();
     @When("taps on Gallery")
     public void taps_on_gallery() {
-        swipepage.tappingGallery();
+        swipePage.tappingGallery();
    
     }
 
     @When("taps on photos")
     public void taps_on_photos() {
-        swipepage.tappingOnPhotosLink();
+        swipePage.tappingOnPhotosLink();
         
     }
 
     @When("swipe right at two images")
     public void swipe_right_until_visibility_of_fourth_image() {
-        new SwipePage().swipeFirstImageLeft();
+        swipePage.swipeFirstImageLeft();
     
     }
     
     @When("swipe two images back at the left")
     public void swipe_left_until_visibility_of_the_first_image() {
-         new SwipePage().swipeFourthImageRight();
+        swipePage.swipeFourthImageRight();
 
          }
       

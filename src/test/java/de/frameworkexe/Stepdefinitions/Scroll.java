@@ -19,6 +19,6 @@ public void navigateTotextClock() {
     }
 
 @Then("the page should be scrolled up until the visibility of Animation")
-public void Animation () {}
+public void animation () {}
       
 }

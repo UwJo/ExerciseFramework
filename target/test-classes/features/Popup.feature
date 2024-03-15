@@ -1,6 +1,6 @@
 Feature: Pop up
 
-
+   
     Scenario: Pop up functionality
         When a user tap on views link
         And scroll up the page 

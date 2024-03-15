@@ -1,6 +1,6 @@
 Feature: Actions
 
-   
+    
     Scenario: Scrolling the API demos page
         When a user tap on views link
         And scroll  the page until the visibility of TextClock link

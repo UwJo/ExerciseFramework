@@ -1,6 +1,6 @@
 Feature: Swipe
 
-  @popups
+  
   Scenario: Swiping left and right the photos in the gallery
     When a user tap on views link
     And taps on Gallery
