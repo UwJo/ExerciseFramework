@@ -53,7 +53,14 @@ public class BasePage {
                 "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(" +
                         "new UiSelector().textContains(\"" + elementText + "\"))"));
     }
-
+     
+    public void swipe(By locator, String direction) {
+        WebElement element = getElement(locator);
+        ((JavascriptExecutor) driver).executeScript("mobile: swipeGesture", ImmutableMap.of(
+                "elementId", ((RemoteWebElement) element).getId(),
+                "direction", direction.toLowerCase(),
+                "percent", 0.40));
+    }
 
 
     }
